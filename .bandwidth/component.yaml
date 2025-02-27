@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: open-webui
+  description: Forked from https://github.com/open-webui/open-webui
+  annotations:
+    github.com/project-slug: Bandwidth/open-webui
+  organization: BW
+  costCenter: IT - Security
+  platformType: AWS
+  buildPlatform: N/A
+spec:
+  type: Service
+  owner: github/band-infosec
+  lifecycle: |
+    Prototype
+    dependsOn:
+        - resource:platform/AWS
+        - resource:cost-center/IT - Security
